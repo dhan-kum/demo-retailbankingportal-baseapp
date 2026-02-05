@@ -1,0 +1,1626 @@
+{
+    "total": 48,
+    "p": 1,
+    "ps": 500,
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 500,
+        "total": 48
+    },
+    "effortTotal": 328,
+    "issues": [
+        {
+            "key": "AYuJfBEer9rP1z9NS3t9",
+            "rule": "xml:S125",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:pom.xml",
+            "project": "deliveryone-baseapp",
+            "line": 56,
+            "hash": "6e7405674b46c05cd7d7fc9433dbb323",
+            "textRange": {
+                "startLine": 56,
+                "endLine": 60,
+                "startOffset": 2,
+                "endOffset": 18
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this commented out code.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDWr9rP1z9NS3tS",
+            "rule": "java:S1128",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/Components.java",
+            "project": "deliveryone-baseapp",
+            "line": 9,
+            "hash": "6acc259cd43a9feb5141fbbadf9cf2d9",
+            "textRange": {
+                "startLine": 9,
+                "endLine": 9,
+                "startOffset": 7,
+                "endOffset": 61
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this unused import \u0027org.springframework.beans.factory.annotation.Autowired\u0027.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDWr9rP1z9NS3tT",
+            "rule": "java:S1128",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/Components.java",
+            "project": "deliveryone-baseapp",
+            "line": 10,
+            "hash": "6eeae4987c6d8cb719cda6b6c9970c47",
+            "textRange": {
+                "startLine": 10,
+                "endLine": 10,
+                "startOffset": 7,
+                "endOffset": 49
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this duplicated import.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDWr9rP1z9NS3tU",
+            "rule": "java:S1128",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/Components.java",
+            "project": "deliveryone-baseapp",
+            "line": 11,
+            "hash": "57910180aa7d074c6c372cf3da4f2e29",
+            "textRange": {
+                "startLine": 11,
+                "endLine": 11,
+                "startOffset": 7,
+                "endOffset": 50
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this duplicated import.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDWr9rP1z9NS3tV",
+            "rule": "java:S1128",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/Components.java",
+            "project": "deliveryone-baseapp",
+            "line": 12,
+            "hash": "bf3dcc4b89a9ae7b62c271322401c1dc",
+            "textRange": {
+                "startLine": 12,
+                "endLine": 12,
+                "startOffset": 7,
+                "endOffset": 52
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this unused import \u0027com.atos.app.repository.BankAccountRepository\u0027.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDWr9rP1z9NS3tW",
+            "rule": "java:S1128",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/Components.java",
+            "project": "deliveryone-baseapp",
+            "line": 13,
+            "hash": "c3dc0e67746e8cb507b03796f8527e54",
+            "textRange": {
+                "startLine": 13,
+                "endLine": 13,
+                "startOffset": 7,
+                "endOffset": 38
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this unused import \u0027com.atos.app.entity.BankAccount\u0027.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDWr9rP1z9NS3tX",
+            "rule": "java:S1128",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/Components.java",
+            "project": "deliveryone-baseapp",
+            "line": 14,
+            "hash": "6eeae4987c6d8cb719cda6b6c9970c47",
+            "textRange": {
+                "startLine": 14,
+                "endLine": 14,
+                "startOffset": 7,
+                "endOffset": 49
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this duplicated import.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDWr9rP1z9NS3tY",
+            "rule": "java:S1128",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/Components.java",
+            "project": "deliveryone-baseapp",
+            "line": 15,
+            "hash": "8a0564a14b260dffb01a4d8813f88cea",
+            "textRange": {
+                "startLine": 15,
+                "endLine": 15,
+                "startOffset": 7,
+                "endOffset": 67
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this unused import \u0027org.springframework.boot.autoconfigure.SpringBootApplication\u0027.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDWr9rP1z9NS3tZ",
+            "rule": "java:S1128",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/Components.java",
+            "project": "deliveryone-baseapp",
+            "line": 16,
+            "hash": "69fdc8295e5d811bf27f5c00eaf3502a",
+            "textRange": {
+                "startLine": 16,
+                "endLine": 16,
+                "startOffset": 7,
+                "endOffset": 50
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this duplicated import.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBENr9rP1z9NS3t8",
+            "rule": "java:S1128",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/config/DatabaseLoader.java",
+            "project": "deliveryone-baseapp",
+            "line": 9,
+            "hash": "69fdc8295e5d811bf27f5c00eaf3502a",
+            "textRange": {
+                "startLine": 9,
+                "endLine": 9,
+                "startOffset": 7,
+                "endOffset": 50
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this unused import \u0027org.springframework.context.annotation.Bean\u0027.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBENr9rP1z9NS3t7",
+            "rule": "java:S125",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/config/DatabaseLoader.java",
+            "project": "deliveryone-baseapp",
+            "line": 24,
+            "hash": "665e2b7db2a1684a4feac5c5e6e2c0a5",
+            "textRange": {
+                "startLine": 24,
+                "endLine": 24,
+                "startOffset": 4,
+                "endOffset": 74
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "This block of commented-out lines of code should be removed.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBD8r9rP1z9NS3t2",
+            "rule": "java:S1128",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "project": "deliveryone-baseapp",
+            "line": 27,
+            "hash": "1bd46a9abdd900b54f13a65363261264",
+            "textRange": {
+                "startLine": 27,
+                "endLine": 27,
+                "startOffset": 7,
+                "endOffset": 30
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this unused import \u0027java.util.logging.Level\u0027.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBD8r9rP1z9NS3ts",
+            "rule": "java:S125",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "project": "deliveryone-baseapp",
+            "line": 28,
+            "hash": "4579f6326734058f550a04032a4657d7",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 2,
+                "endOffset": 34
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "This block of commented-out lines of code should be removed.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBD8r9rP1z9NS3tv",
+            "rule": "java:S125",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "project": "deliveryone-baseapp",
+            "line": 37,
+            "hash": "bafbb3d2d0da618a429d235c5914b0d1",
+            "textRange": {
+                "startLine": 37,
+                "endLine": 37,
+                "startOffset": 3,
+                "endOffset": 75
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "This block of commented-out lines of code should be removed.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBD8r9rP1z9NS3tt",
+            "rule": "java:S116",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "project": "deliveryone-baseapp",
+            "line": 51,
+            "hash": "03e162df8834405bc6d41b704fd5e1d0",
+            "textRange": {
+                "startLine": 51,
+                "endLine": 51,
+                "startOffset": 25,
+                "endOffset": 35
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this field \"QUEUE_NAME\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBD8r9rP1z9NS3tu",
+            "rule": "java:S1170",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "project": "deliveryone-baseapp",
+            "line": 51,
+            "hash": "03e162df8834405bc6d41b704fd5e1d0",
+            "textRange": {
+                "startLine": 51,
+                "endLine": 51,
+                "startOffset": 25,
+                "endOffset": 35
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Make this final field static too.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBD7r9rP1z9NS3tn",
+            "rule": "java:S2629",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "project": "deliveryone-baseapp",
+            "line": 61,
+            "hash": "fd2e6528637a023371bcee80be1a0284",
+            "textRange": {
+                "startLine": 61,
+                "endLine": 61,
+                "startOffset": 20,
+                "endOffset": 102
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Invoke method(s) only conditionally. Use the built-in formatting to construct this argument.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "performance"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBD8r9rP1z9NS3tw",
+            "rule": "java:S3457",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "project": "deliveryone-baseapp",
+            "line": 61,
+            "hash": "fd2e6528637a023371bcee80be1a0284",
+            "textRange": {
+                "startLine": 61,
+                "endLine": 61,
+                "startOffset": 8,
+                "endOffset": 103
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Format specifiers should be used instead of string concatenation.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "",
+            "tags": [
+                "cert",
+                "confusing"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBD8r9rP1z9NS3tx",
+            "rule": "java:S125",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "project": "deliveryone-baseapp",
+            "line": 68,
+            "hash": "d52e0a4137cb061b84835433abfe1fd3",
+            "textRange": {
+                "startLine": 68,
+                "endLine": 68,
+                "startOffset": 7,
+                "endOffset": 77
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/controller/BankAccountController.java",
+                            "textRange": {
+                                "startLine": 69,
+                                "endLine": 69,
+                                "startOffset": 10,
+                                "endOffset": 129
+                            },
+                            "msg": "Code",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "This block of commented-out lines of code should be removed.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBD8r9rP1z9NS3tz",
+            "rule": "java:S106",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "project": "deliveryone-baseapp",
+            "line": 85,
+            "hash": "c5578093e26d16bffe1b00587932a215",
+            "textRange": {
+                "startLine": 85,
+                "endLine": 85,
+                "startOffset": 12,
+                "endOffset": 22
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace this use of System.out or System.err by a logger.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "",
+            "tags": [
+                "bad-practice",
+                "cert",
+                "owasp-a3"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDfr9rP1z9NS3tb",
+            "rule": "java:S125",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/logger/InfoAppender.java",
+            "project": "deliveryone-baseapp",
+            "line": 37,
+            "hash": "2e95d9037e1f505cdfcadc914152d4c8",
+            "textRange": {
+                "startLine": 37,
+                "endLine": 37,
+                "startOffset": 16,
+                "endOffset": 84
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "This block of commented-out lines of code should be removed.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDfr9rP1z9NS3tc",
+            "rule": "java:S125",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/logger/InfoAppender.java",
+            "project": "deliveryone-baseapp",
+            "line": 38,
+            "hash": "db527032beafb3d73bfb7431e2587326",
+            "textRange": {
+                "startLine": 38,
+                "endLine": 38,
+                "startOffset": 10,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "This block of commented-out lines of code should be removed.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDfr9rP1z9NS3td",
+            "rule": "java:S125",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/logger/InfoAppender.java",
+            "project": "deliveryone-baseapp",
+            "line": 48,
+            "hash": "49cd3fc2e46b7eac825d5a71debdbd48",
+            "textRange": {
+                "startLine": 48,
+                "endLine": 48,
+                "startOffset": 8,
+                "endOffset": 45
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "This block of commented-out lines of code should be removed.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDnr9rP1z9NS3tk",
+            "rule": "java:S119",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/logger/MapHolder.java",
+            "project": "deliveryone-baseapp",
+            "line": 6,
+            "hash": "1aaa6a6372ce8da9915e4f990c706328",
+            "textRange": {
+                "startLine": 6,
+                "endLine": 6,
+                "startOffset": 23,
+                "endOffset": 29
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this generic name to match the regular expression \u0027^[A-Z][0-9]?$\u0027.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDnr9rP1z9NS3tl",
+            "rule": "java:S119",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/logger/MapHolder.java",
+            "project": "deliveryone-baseapp",
+            "line": 6,
+            "hash": "1aaa6a6372ce8da9915e4f990c706328",
+            "textRange": {
+                "startLine": 6,
+                "endLine": 6,
+                "startOffset": 31,
+                "endOffset": 44
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this generic name to match the regular expression \u0027^[A-Z][0-9]?$\u0027.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDnr9rP1z9NS3te",
+            "rule": "java:S3740",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/logger/MapHolder.java",
+            "project": "deliveryone-baseapp",
+            "line": 7,
+            "hash": "7288a182c8636f77094c457667885585",
+            "textRange": {
+                "startLine": 7,
+                "endLine": 7,
+                "startOffset": 12,
+                "endOffset": 15
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Provide the parametrized type for this generic.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDnr9rP1z9NS3tf",
+            "rule": "java:S3740",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/logger/MapHolder.java",
+            "project": "deliveryone-baseapp",
+            "line": 10,
+            "hash": "357e3b01ffe9ebfd0a776a16494602af",
+            "textRange": {
+                "startLine": 10,
+                "endLine": 10,
+                "startOffset": 19,
+                "endOffset": 28
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Provide the parametrized type for this generic.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDnr9rP1z9NS3tj",
+            "rule": "java:S3008",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/logger/MapHolder.java",
+            "project": "deliveryone-baseapp",
+            "line": 10,
+            "hash": "357e3b01ffe9ebfd0a776a16494602af",
+            "textRange": {
+                "startLine": 10,
+                "endLine": 10,
+                "startOffset": 29,
+                "endOffset": 41
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Rename this field \"MAP_INSTANCE\" to match the regular expression \u0027^[a-z][a-zA-Z0-9]*$\u0027.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "convention"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDnr9rP1z9NS3tg",
+            "rule": "java:S3740",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/logger/MapHolder.java",
+            "project": "deliveryone-baseapp",
+            "line": 12,
+            "hash": "69feffe6aeb4fa4a2a33524f2b49cff5",
+            "textRange": {
+                "startLine": 12,
+                "endLine": 12,
+                "startOffset": 18,
+                "endOffset": 27
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Provide the parametrized type for this generic.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDnr9rP1z9NS3th",
+            "rule": "java:S3740",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/logger/MapHolder.java",
+            "project": "deliveryone-baseapp",
+            "line": 14,
+            "hash": "47ba4c73b21ef02b8643fcbd8fe5aca6",
+            "textRange": {
+                "startLine": 14,
+                "endLine": 14,
+                "startOffset": 31,
+                "endOffset": 40
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Provide the parametrized type for this generic.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDnr9rP1z9NS3ti",
+            "rule": "java:S3740",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/logger/MapHolder.java",
+            "project": "deliveryone-baseapp",
+            "line": 23,
+            "hash": "bc8499a5685bda4023adc4ca1eaae567",
+            "textRange": {
+                "startLine": 23,
+                "endLine": 23,
+                "startOffset": 11,
+                "endOffset": 14
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Provide the parametrized type for this generic.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "pitfall"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBCFr9rP1z9NS3tC",
+            "rule": "java:S112",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/ConsumerService.java",
+            "project": "deliveryone-baseapp",
+            "line": 11,
+            "hash": "bcb26c70b4f4484f37a21cb645843ff9",
+            "textRange": {
+                "startLine": 11,
+                "endLine": 11,
+                "startOffset": 56,
+                "endOffset": 65
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Define and throw a dedicated exception instead of using a generic one.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "",
+            "tags": [
+                "cert",
+                "cwe",
+                "error-handling"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBCGr9rP1z9NS3tE",
+            "rule": "java:S4719",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/ConsumerService.java",
+            "project": "deliveryone-baseapp",
+            "line": 28,
+            "hash": "8bdc90a63725d00604a11edd2352cb87",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 54,
+                "endOffset": 61
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace charset name argument with StandardCharsets.UTF_8",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "",
+            "tags": [
+                "clumsy",
+                "java7"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBCGr9rP1z9NS3tF",
+            "rule": "java:S106",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/ConsumerService.java",
+            "project": "deliveryone-baseapp",
+            "line": 29,
+            "hash": "00b8c5a4d9603d13e0060d5ee5d773d4",
+            "textRange": {
+                "startLine": 29,
+                "endLine": 29,
+                "startOffset": 20,
+                "endOffset": 30
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace this use of System.out or System.err by a logger.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "",
+            "tags": [
+                "bad-practice",
+                "cert",
+                "owasp-a3"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBCGr9rP1z9NS3tG",
+            "rule": "java:S106",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/ConsumerService.java",
+            "project": "deliveryone-baseapp",
+            "line": 32,
+            "hash": "2d63c6928a6d76ac1d58dda64ba2d470",
+            "textRange": {
+                "startLine": 32,
+                "endLine": 32,
+                "startOffset": 12,
+                "endOffset": 22
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace this use of System.out or System.err by a logger.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "",
+            "tags": [
+                "bad-practice",
+                "cert",
+                "owasp-a3"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBDIr9rP1z9NS3tR",
+            "rule": "java:S1128",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/FileService.java",
+            "project": "deliveryone-baseapp",
+            "line": 3,
+            "hash": "3f5102de042a067b413a27640c1fc5e4",
+            "textRange": {
+                "startLine": 3,
+                "endLine": 3,
+                "startOffset": 7,
+                "endOffset": 61
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this unused import \u0027org.springframework.beans.factory.annotation.Qualifier\u0027.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBC9r9rP1z9NS3tP",
+            "rule": "java:S1128",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/TransferServiceImpl.java",
+            "project": "deliveryone-baseapp",
+            "line": 5,
+            "hash": "6acc259cd43a9feb5141fbbadf9cf2d9",
+            "textRange": {
+                "startLine": 5,
+                "endLine": 5,
+                "startOffset": 7,
+                "endOffset": 61
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this unused import \u0027org.springframework.beans.factory.annotation.Autowired\u0027.",
+            "effort": "2min",
+            "debt": "2min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBC9r9rP1z9NS3tM",
+            "rule": "java:S125",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/TransferServiceImpl.java",
+            "project": "deliveryone-baseapp",
+            "line": 20,
+            "hash": "9e3045eda2d9958220138a70a109b3b7",
+            "textRange": {
+                "startLine": 20,
+                "endLine": 20,
+                "startOffset": 6,
+                "endOffset": 50
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "This block of commented-out lines of code should be removed.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "unused"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBC9r9rP1z9NS3tI",
+            "rule": "java:S112",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/TransferServiceImpl.java",
+            "project": "deliveryone-baseapp",
+            "line": 27,
+            "hash": "4cfb7f7cad4e996febfc759c06aa1776",
+            "textRange": {
+                "startLine": 27,
+                "endLine": 27,
+                "startOffset": 80,
+                "endOffset": 89
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Define and throw a dedicated exception instead of using a generic one.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "",
+            "tags": [
+                "cert",
+                "cwe",
+                "error-handling"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBC9r9rP1z9NS3tK",
+            "rule": "java:S2589",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/TransferServiceImpl.java",
+            "project": "deliveryone-baseapp",
+            "line": 33,
+            "hash": "d210cafb0af69d56d354c5c379ef1a01",
+            "textRange": {
+                "startLine": 33,
+                "endLine": 33,
+                "startOffset": 12,
+                "endOffset": 37
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this expression which always evaluates to \"true\"",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "",
+            "tags": [
+                "cert",
+                "cwe",
+                "redundant",
+                "suspicious"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBC9r9rP1z9NS3tL",
+            "rule": "java:S2589",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/TransferServiceImpl.java",
+            "project": "deliveryone-baseapp",
+            "line": 33,
+            "hash": "d210cafb0af69d56d354c5c379ef1a01",
+            "textRange": {
+                "startLine": 33,
+                "endLine": 33,
+                "startOffset": 41,
+                "endOffset": 68
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Remove this expression which always evaluates to \"true\"",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "",
+            "tags": [
+                "cert",
+                "cwe",
+                "redundant",
+                "suspicious"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBC9r9rP1z9NS3tJ",
+            "rule": "java:S1066",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/TransferServiceImpl.java",
+            "project": "deliveryone-baseapp",
+            "line": 35,
+            "hash": "a692f1db037c8af977b5841c1d296155",
+            "textRange": {
+                "startLine": 35,
+                "endLine": 35,
+                "startOffset": 12,
+                "endOffset": 14
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/TransferServiceImpl.java",
+                            "textRange": {
+                                "startLine": 33,
+                                "endLine": 33,
+                                "startOffset": 8,
+                                "endOffset": 10
+                            },
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Merge this if statement with the enclosing one.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "clumsy"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBC9r9rP1z9NS3tN",
+            "rule": "java:S2139",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/TransferServiceImpl.java",
+            "project": "deliveryone-baseapp",
+            "line": 47,
+            "hash": "a1fa65cadc011c39de242eb53af35de6",
+            "textRange": {
+                "startLine": 47,
+                "endLine": 47,
+                "startOffset": 15,
+                "endOffset": 28
+            },
+            "flows": [
+                {
+                    "locations": [
+                        {
+                            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/TransferServiceImpl.java",
+                            "textRange": {
+                                "startLine": 48,
+                                "endLine": 48,
+                                "startOffset": 12,
+                                "endOffset": 104
+                            },
+                            "msg": "Logging statement.",
+                            "msgFormattings": []
+                        }
+                    ]
+                },
+                {
+                    "locations": [
+                        {
+                            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/TransferServiceImpl.java",
+                            "textRange": {
+                                "startLine": 49,
+                                "endLine": 49,
+                                "startOffset": 18,
+                                "endOffset": 21
+                            },
+                            "msg": "Thrown exception.",
+                            "msgFormattings": []
+                        }
+                    ]
+                }
+            ],
+            "status": "OPEN",
+            "message": "Either log this exception and handle it, or rethrow it with some contextual information.",
+            "effort": "15min",
+            "debt": "15min",
+            "author": "",
+            "tags": [
+                "clumsy",
+                "error-handling"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBC9r9rP1z9NS3tO",
+            "rule": "java:S1168",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/TransferServiceImpl.java",
+            "project": "deliveryone-baseapp",
+            "line": 51,
+            "hash": "540c13e9e156b687226421b24f2df178",
+            "textRange": {
+                "startLine": 51,
+                "endLine": 51,
+                "startOffset": 15,
+                "endOffset": 19
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Return an empty map instead of null.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "",
+            "tags": [
+                "cert"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBEGr9rP1z9NS3t4",
+            "rule": "java:S2293",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/utils/Utility.java",
+            "project": "deliveryone-baseapp",
+            "line": 19,
+            "hash": "9c43fdd6375b6e0f29954d767a5905c5",
+            "textRange": {
+                "startLine": 19,
+                "endLine": 19,
+                "startOffset": 33,
+                "endOffset": 36
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\").",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "",
+            "tags": [
+                "clumsy"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBEGr9rP1z9NS3t3",
+            "rule": "java:S112",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/utils/Utility.java",
+            "project": "deliveryone-baseapp",
+            "line": 28,
+            "hash": "fdda924e16c6c8cb6afc035461946766",
+            "textRange": {
+                "startLine": 28,
+                "endLine": 28,
+                "startOffset": 22,
+                "endOffset": 38
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Define and throw a dedicated exception instead of using a generic one.",
+            "effort": "20min",
+            "debt": "20min",
+            "author": "",
+            "tags": [
+                "cert",
+                "cwe",
+                "error-handling"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBEGr9rP1z9NS3t5",
+            "rule": "java:S2293",
+            "severity": "MINOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/utils/Utility.java",
+            "project": "deliveryone-baseapp",
+            "line": 40,
+            "hash": "f866cbd1bf137ad5addc3086eba7acc2",
+            "textRange": {
+                "startLine": 40,
+                "endLine": 40,
+                "startOffset": 28,
+                "endOffset": 31
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Replace the type specification in this constructor call with the diamond operator (\"\u003c\u003e\").",
+            "effort": "1min",
+            "debt": "1min",
+            "author": "",
+            "tags": [
+                "clumsy"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBEGr9rP1z9NS3t6",
+            "rule": "java:S1168",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/utils/Utility.java",
+            "project": "deliveryone-baseapp",
+            "line": 44,
+            "hash": "540c13e9e156b687226421b24f2df178",
+            "textRange": {
+                "startLine": 44,
+                "endLine": 44,
+                "startOffset": 19,
+                "endOffset": 23
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Return an empty collection instead of null.",
+            "effort": "30min",
+            "debt": "30min",
+            "author": "",
+            "tags": [
+                "cert"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "CODE_SMELL",
+            "scope": "MAIN",
+            "quickFixAvailable": true,
+            "messageFormattings": []
+        }
+    ],
+    "components": [
+        {
+            "key": "deliveryone-baseapp:src/main/java/com/eviden/app/service/TransferServiceImpl.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "TransferServiceImpl.java",
+            "longName": "src/main/java/com/eviden/app/service/TransferServiceImpl.java",
+            "path": "src/main/java/com/eviden/app/service/TransferServiceImpl.java"
+        },
+        {
+            "key": "deliveryone-baseapp:src/main/java/com/eviden/app/utils/Utility.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Utility.java",
+            "longName": "src/main/java/com/eviden/app/utils/Utility.java",
+            "path": "src/main/java/com/eviden/app/utils/Utility.java"
+        },
+        {
+            "key": "deliveryone-baseapp:src/main/java/com/eviden/app/service/FileService.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "FileService.java",
+            "longName": "src/main/java/com/eviden/app/service/FileService.java",
+            "path": "src/main/java/com/eviden/app/service/FileService.java"
+        },
+        {
+            "key": "deliveryone-baseapp:src/main/java/com/eviden/app/config/DatabaseLoader.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "DatabaseLoader.java",
+            "longName": "src/main/java/com/eviden/app/config/DatabaseLoader.java",
+            "path": "src/main/java/com/eviden/app/config/DatabaseLoader.java"
+        },
+        {
+            "key": "deliveryone-baseapp:src/main/java/com/eviden/app/Components.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "Components.java",
+            "longName": "src/main/java/com/eviden/app/Components.java",
+            "path": "src/main/java/com/eviden/app/Components.java"
+        },
+        {
+            "key": "deliveryone-baseapp",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "Eviden Starter Kit for Spring Application",
+            "longName": "Eviden Starter Kit for Spring Application"
+        },
+        {
+            "key": "deliveryone-baseapp:src/main/java/com/eviden/app/logger/InfoAppender.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "InfoAppender.java",
+            "longName": "src/main/java/com/eviden/app/logger/InfoAppender.java",
+            "path": "src/main/java/com/eviden/app/logger/InfoAppender.java"
+        },
+        {
+            "key": "deliveryone-baseapp:pom.xml",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "pom.xml",
+            "longName": "pom.xml",
+            "path": "pom.xml"
+        },
+        {
+            "key": "deliveryone-baseapp:src/main/java/com/eviden/app/logger/MapHolder.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "MapHolder.java",
+            "longName": "src/main/java/com/eviden/app/logger/MapHolder.java",
+            "path": "src/main/java/com/eviden/app/logger/MapHolder.java"
+        },
+        {
+            "key": "deliveryone-baseapp:src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "BankAccountController.java",
+            "longName": "src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "path": "src/main/java/com/eviden/app/controller/BankAccountController.java"
+        },
+        {
+            "key": "deliveryone-baseapp:src/main/java/com/eviden/app/service/ConsumerService.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ConsumerService.java",
+            "longName": "src/main/java/com/eviden/app/service/ConsumerService.java",
+            "path": "src/main/java/com/eviden/app/service/ConsumerService.java"
+        }
+    ],
+    "facets": []
+}

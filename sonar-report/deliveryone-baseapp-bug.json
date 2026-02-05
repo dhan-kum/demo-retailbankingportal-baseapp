@@ -1,0 +1,198 @@
+{
+    "total": 5,
+    "p": 1,
+    "ps": 500,
+    "paging": {
+        "pageIndex": 1,
+        "pageSize": 500,
+        "total": 5
+    },
+    "effortTotal": 35,
+    "issues": [
+        {
+            "key": "AYuJfBD8r9rP1z9NS3tr",
+            "rule": "java:S3655",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "project": "deliveryone-baseapp",
+            "line": 78,
+            "hash": "ba003209eca43ee0c3e3c9a0f94a2e83",
+            "textRange": {
+                "startLine": 78,
+                "endLine": 78,
+                "startOffset": 88,
+                "endOffset": 132
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Call \"Optional#isPresent()\" or \"!Optional#isEmpty()\" before accessing the value.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBD7r9rP1z9NS3tq",
+            "rule": "java:S3655",
+            "severity": "MAJOR",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "project": "deliveryone-baseapp",
+            "line": 79,
+            "hash": "a43fd82894a6fda59b1e454e37af9d38",
+            "textRange": {
+                "startLine": 79,
+                "endLine": 79,
+                "startOffset": 81,
+                "endOffset": 123
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Call \"Optional#isPresent()\" or \"!Optional#isEmpty()\" before accessing the value.",
+            "effort": "10min",
+            "debt": "10min",
+            "author": "",
+            "tags": [
+                "cwe"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBD7r9rP1z9NS3to",
+            "rule": "java:S2095",
+            "severity": "BLOCKER",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "project": "deliveryone-baseapp",
+            "line": 97,
+            "hash": "3ca884c76ba07445e5755c82c4463177",
+            "textRange": {
+                "startLine": 97,
+                "endLine": 97,
+                "startOffset": 35,
+                "endOffset": 64
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use try-with-resources or close this \"FileOutputStream\" in a \"finally\" clause.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "cert",
+                "cwe",
+                "denial-of-service",
+                "leak"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBD7r9rP1z9NS3tp",
+            "rule": "java:S2095",
+            "severity": "BLOCKER",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "project": "deliveryone-baseapp",
+            "line": 98,
+            "hash": "b95c008bd4cc364e6f33a191d24490c9",
+            "textRange": {
+                "startLine": 98,
+                "endLine": 98,
+                "startOffset": 34,
+                "endOffset": 58
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use try-with-resources or close this \"ZipOutputStream\" in a \"finally\" clause.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "cert",
+                "cwe",
+                "denial-of-service",
+                "leak"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        },
+        {
+            "key": "AYuJfBCGr9rP1z9NS3tD",
+            "rule": "java:S2095",
+            "severity": "BLOCKER",
+            "component": "deliveryone-baseapp:src/main/java/com/eviden/app/service/ConsumerService.java",
+            "project": "deliveryone-baseapp",
+            "line": 18,
+            "hash": "00eaae829e903c8ff58f47069b8c0d8c",
+            "textRange": {
+                "startLine": 18,
+                "endLine": 18,
+                "startOffset": 25,
+                "endOffset": 48
+            },
+            "flows": [],
+            "status": "OPEN",
+            "message": "Use try-with-resources or close this \"Connection\" in a \"finally\" clause.",
+            "effort": "5min",
+            "debt": "5min",
+            "author": "",
+            "tags": [
+                "cert",
+                "cwe",
+                "denial-of-service",
+                "leak"
+            ],
+            "creationDate": "2023-11-01T06:04:26+0000",
+            "updateDate": "2023-11-01T06:04:26+0000",
+            "type": "BUG",
+            "scope": "MAIN",
+            "quickFixAvailable": false,
+            "messageFormattings": []
+        }
+    ],
+    "components": [
+        {
+            "key": "deliveryone-baseapp",
+            "enabled": true,
+            "qualifier": "TRK",
+            "name": "Eviden Starter Kit for Spring Application",
+            "longName": "Eviden Starter Kit for Spring Application"
+        },
+        {
+            "key": "deliveryone-baseapp:src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "BankAccountController.java",
+            "longName": "src/main/java/com/eviden/app/controller/BankAccountController.java",
+            "path": "src/main/java/com/eviden/app/controller/BankAccountController.java"
+        },
+        {
+            "key": "deliveryone-baseapp:src/main/java/com/eviden/app/service/ConsumerService.java",
+            "enabled": true,
+            "qualifier": "FIL",
+            "name": "ConsumerService.java",
+            "longName": "src/main/java/com/eviden/app/service/ConsumerService.java",
+            "path": "src/main/java/com/eviden/app/service/ConsumerService.java"
+        }
+    ],
+    "facets": []
+}
