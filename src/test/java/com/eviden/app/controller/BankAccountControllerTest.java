@@ -1,5 +1,6 @@
 package com.eviden.app.controller;
 
+import com.eviden.app.dto.TransferDTO;
 import com.eviden.app.entity.BankAccount;
 import com.eviden.app.entity.Transfer;
 import com.eviden.app.repository.BankAccountRepository;
@@ -109,7 +110,7 @@ class BankAccountControllerTest {
                 .andExpect(jsonPath("$.balance", is(52000.0)))
                 .andExpect(jsonPath("$.type", is("Savings")));
 
-        verify(bankAccountRepository, times(2)).findByAccountNumber("10001");
+        verify(bankAccountRepository, times(1)).findByAccountNumber("10001");
     }
 
     @Test
@@ -119,12 +120,12 @@ class BankAccountControllerTest {
         mockMvc.perform(get("/api/bankaccounts/99999"))
                 .andExpect(status().isOk());
 
-        verify(bankAccountRepository, times(2)).findByAccountNumber("99999");
+        verify(bankAccountRepository, times(1)).findByAccountNumber("99999");
     }
 
     @Test
     void transfer_shouldReturnOkOnSuccessfulTransfer() throws Exception {
-        Transfer transfer = new Transfer("10001", "10002", 500.0);
+        TransferDTO transferDTO = new TransferDTO("10001", "10002", 500.0);
 
         BankAccount updatedSender = new BankAccount("10001", "John Doe", 51500.0, "Savings");
         BankAccount updatedReceiver = new BankAccount("10002", "John Doe", 8000.0, "Checking");
@@ -137,7 +138,7 @@ class BankAccountControllerTest {
 
         mockMvc.perform(post("/api/bankaccounts/transfer")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(transfer)))
+                        .content(objectMapper.writeValueAsString(transferDTO)))
                 .andExpect(status().isOk())
                 .andExpect(content().string("Transfer was successful."));
 
@@ -146,13 +147,13 @@ class BankAccountControllerTest {
 
     @Test
     void transfer_shouldReturnBadRequestWhenTransferReturnsNull() throws Exception {
-        Transfer transfer = new Transfer("10001", "10002", 100000.0);
+        TransferDTO transferDTO = new TransferDTO("10001", "10002", 100000.0);
 
         when(transferService.transfer(any(Transfer.class))).thenReturn(null);
 
         mockMvc.perform(post("/api/bankaccounts/transfer")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(transfer)))
+                        .content(objectMapper.writeValueAsString(transferDTO)))
                 .andExpect(status().isBadRequest());
 
         verify(transferService, times(1)).transfer(any(Transfer.class));
@@ -160,7 +161,7 @@ class BankAccountControllerTest {
 
     @Test
     void transfer_shouldReturnBadRequestWhenReceiverAccountNotPresent() throws Exception {
-        Transfer transfer = new Transfer("10001", "10002", 500.0);
+        TransferDTO transferDTO = new TransferDTO("10001", "10002", 500.0);
 
         Map<String, Optional<BankAccount>> resultMap = new HashMap<>();
         resultMap.put("senderAccount", Optional.of(savingsAccount));
@@ -170,7 +171,7 @@ class BankAccountControllerTest {
 
         mockMvc.perform(post("/api/bankaccounts/transfer")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(transfer)))
+                        .content(objectMapper.writeValueAsString(transferDTO)))
                 .andExpect(status().isBadRequest());
 
         verify(transferService, times(1)).transfer(any(Transfer.class));
@@ -178,7 +179,7 @@ class BankAccountControllerTest {
 
     @Test
     void transfer_shouldReturnBadRequestWhenSenderAccountNotPresent() throws Exception {
-        Transfer transfer = new Transfer("10001", "10002", 500.0);
+        TransferDTO transferDTO = new TransferDTO("10001", "10002", 500.0);
 
         Map<String, Optional<BankAccount>> resultMap = new HashMap<>();
         resultMap.put("senderAccount", Optional.empty());
@@ -188,7 +189,7 @@ class BankAccountControllerTest {
 
         mockMvc.perform(post("/api/bankaccounts/transfer")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(transfer)))
+                        .content(objectMapper.writeValueAsString(transferDTO)))
                 .andExpect(status().isBadRequest());
 
         verify(transferService, times(1)).transfer(any(Transfer.class));
@@ -196,7 +197,7 @@ class BankAccountControllerTest {
 
     @Test
     void transfer_shouldReturnBadRequestWhenAccountNumbersMismatch() throws Exception {
-        Transfer transfer = new Transfer("10001", "10002", 500.0);
+        TransferDTO transferDTO = new TransferDTO("10001", "10002", 500.0);
 
         BankAccount mismatchedSender = new BankAccount("99999", "Jane Doe", 51500.0, "Savings");
         BankAccount mismatchedReceiver = new BankAccount("88888", "Jane Doe", 8000.0, "Checking");
@@ -209,7 +210,7 @@ class BankAccountControllerTest {
 
         mockMvc.perform(post("/api/bankaccounts/transfer")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(transfer)))
+                        .content(objectMapper.writeValueAsString(transferDTO)))
                 .andExpect(status().isBadRequest());
 
         verify(transferService, times(1)).transfer(any(Transfer.class));
@@ -217,13 +218,13 @@ class BankAccountControllerTest {
 
     @Test
     void transfer_shouldReturnBadRequestWhenExceptionThrown() throws Exception {
-        Transfer transfer = new Transfer("10001", "10002", 500.0);
+        TransferDTO transferDTO = new TransferDTO("10001", "10002", 500.0);
 
         when(transferService.transfer(any(Transfer.class))).thenThrow(new RuntimeException("Transfer failed"));
 
         mockMvc.perform(post("/api/bankaccounts/transfer")
                         .contentType(MediaType.APPLICATION_JSON)
-                        .content(objectMapper.writeValueAsString(transfer)))
+                        .content(objectMapper.writeValueAsString(transferDTO)))
                 .andExpect(status().isBadRequest());
 
         verify(transferService, times(1)).transfer(any(Transfer.class));
