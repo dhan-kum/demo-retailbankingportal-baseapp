@@ -1,5 +1,6 @@
 package com.eviden.app.controller;
 
+import com.eviden.app.dto.TransferDTO;
 import com.eviden.app.entity.BankAccount;
 import com.eviden.app.entity.Transfer;
 import com.eviden.app.service.ConsumerService;
@@ -21,8 +22,6 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import com.eviden.app.service.TransferServiceImpl;
 import com.eviden.app.repository.BankAccountRepository;
-import java.util.logging.Level;
-//import java.util.logging.Logger;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -30,8 +29,7 @@ import org.slf4j.LoggerFactory;
 @RequestMapping("/api/bankaccounts")
 public class BankAccountController {
 
-    //Logger logger = Logger.getLogger(BankAccountController.class.getName());
-    Logger logger = LoggerFactory.getLogger(BankAccountController.class);
+    private static final Logger logger = LoggerFactory.getLogger(BankAccountController.class);
 
     @Autowired
     private TransferServiceImpl transferService;
@@ -45,7 +43,7 @@ public class BankAccountController {
     @Autowired
     ConsumerService consumerService;
 
-    private final String QUEUE_NAME = "my_queue";
+    private static final String queueName = "my_queue";
 
     @GetMapping("/")
     public List<BankAccount> getAllAccounts() {
@@ -55,35 +53,43 @@ public class BankAccountController {
 
     @GetMapping("/{id}")
     public BankAccount getBankAccount(@PathVariable String id) {
-        logger.info("Inside getBankAccount() method -" + bankAccountRepository.findByAccountNumber(id));
-        return bankAccountRepository.findByAccountNumber(id);
+        BankAccount account = bankAccountRepository.findByAccountNumber(id);
+        logger.info("Inside getBankAccount() method - {}", account);
+        return account;
     }
 
     @PostMapping("/logmessage")
     public void saveLogs(@RequestParam String logmsg) {
         logger.info(logmsg);
-        //logger.error("Uncaught [object HTMLLinkElement]. Unable to load URL");
-        //logger.error("ErroMsg.{}.stacktrace.{}","Uncaught [object HTMLLinkElement]. Unable to load URL", "Unable to load URL");
     }
 
     @PostMapping("/transfer")
-    public ResponseEntity<String> transfer(@RequestBody Transfer transfer) {
-        // Call the transfer service
+    public ResponseEntity<String> transfer(@RequestBody TransferDTO transferDTO) {
+        Transfer transfer = new Transfer(transferDTO.getSenderAccount(), transferDTO.getReceiverAccount(), transferDTO.getAmount());
         try {
             Map<String, Optional<BankAccount>> backAccountCollection = transferService.transfer(transfer);
-            if (backAccountCollection != null && backAccountCollection.get("receiverAccount").isPresent() && backAccountCollection.get("senderAccount").isPresent()) {
-                if (Integer.parseInt(transfer.getReceiverAccount()) == Integer.parseInt(backAccountCollection.get("receiverAccount").get().getAccountNumber()) && Integer.parseInt(transfer.getSenderAccount()) == Integer.parseInt(backAccountCollection.get("senderAccount").get().getAccountNumber())) {
-                    logger.info("Info.{}", "Transfer was successful.");
-                    return ResponseEntity.ok("Transfer was successful.");
+            if (backAccountCollection != null) {
+                Optional<BankAccount> receiverOpt = backAccountCollection.get("receiverAccount");
+                Optional<BankAccount> senderOpt = backAccountCollection.get("senderAccount");
+                if (receiverOpt != null && receiverOpt.isPresent() && senderOpt != null && senderOpt.isPresent()) {
+                    BankAccount receiver = receiverOpt.get();
+                    BankAccount sender = senderOpt.get();
+                    if (Integer.parseInt(transfer.getReceiverAccount()) == Integer.parseInt(receiver.getAccountNumber())
+                            && Integer.parseInt(transfer.getSenderAccount()) == Integer.parseInt(sender.getAccountNumber())) {
+                        logger.info("Info.{}", "Transfer was successful.");
+                        return ResponseEntity.ok("Transfer was successful.");
+                    } else {
+                        logger.info("Info.{}", "Transfer was not successful.");
+                    }
                 } else {
                     logger.info("Info.{}", "Transfer was not successful.");
                 }
             } else {
                 logger.info("Info.{}", "Transfer was not successful.");
             }
-            System.out.println("Transfer money...");
+            logger.info("Transfer money...");
         } catch (Exception e) {
-            e.printStackTrace();
+            logger.error("Transfer failed", e);
         }
         return ResponseEntity.badRequest().build();
     }
@@ -98,13 +104,13 @@ public class BankAccountController {
             msg = "Successfully";
         } catch (Exception e) {
             msg = "Error in generating errorMsg-" + e.getMessage();
-            e.printStackTrace();
+            logger.error("Error in generating zip", e);
         }
         return msg;
     }
 
     @GetMapping("/connect")
     public void send() throws Exception {
-        consumerService.connect(QUEUE_NAME);
+        consumerService.connect(queueName);
     }
 }

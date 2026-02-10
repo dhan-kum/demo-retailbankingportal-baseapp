@@ -27,7 +27,7 @@ public class ConsumerService {
         }
     }
 
-    private Connection getConnection() throws IOException, TimeoutException {
+    Connection getConnection() throws IOException, TimeoutException {
         ConnectionFactory factory = new ConnectionFactory();
         factory.setHost("localhost");
         return factory.newConnection();
