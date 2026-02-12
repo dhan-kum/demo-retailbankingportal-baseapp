@@ -1,7 +1,7 @@
 #
 # Build stage
 #
-FROM maven:3.6.0-jdk-11-slim AS build
+FROM maven:3.9-eclipse-temurin-21 AS build
 COPY src /home/app/src
 COPY pom.xml /home/app
 COPY pom.xml /home/app

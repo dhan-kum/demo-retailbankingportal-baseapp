@@ -7,7 +7,7 @@
 	<parent>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-parent</artifactId>
-			<version>2.2.4.RELEASE</version>
+			<version>3.4.2</version>
 			<relativePath/>
 	</parent>
 	<groupId>com.atos.app</groupId>
@@ -17,7 +17,7 @@
 	
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<java.version>11</java.version>
+		<java.version>21</java.version>
 	</properties>
 
 	<dependencies>
@@ -50,7 +50,7 @@
 		<dependency>
 			<groupId>org.projectlombok</groupId>
 			<artifactId>lombok</artifactId>
-			<version>1.18.26</version>
+			<version>1.18.34</version>
 			<scope>provided</scope>
 		</dependency>
 		<!--<dependency>
@@ -62,7 +62,7 @@
 		<dependency>
 			<groupId>org.json</groupId>
 			<artifactId>json</artifactId>
-			<version>20230227</version>
+			<version>20240303</version>
 		</dependency>
 
 		<dependency>
@@ -72,12 +72,6 @@
 		<dependency>
 			<groupId>org.springframework.amqp</groupId>
 			<artifactId>spring-rabbit</artifactId>
-			<version>3.0.4</version>
-		</dependency>
-		<dependency>
-			<groupId>org.apache.activemq</groupId>
-			<artifactId>activemq-all</artifactId>
-			<version>5.18.3</version>
 		</dependency>
 	</dependencies>
 
@@ -91,7 +85,7 @@
 			<plugin>
 				<groupId>com.github.eirslett</groupId>
 				<artifactId>frontend-maven-plugin</artifactId>
-				<version>1.9.1</version>
+				<version>1.15.1</version>
 					<configuration>
 						<installDirectory>target</installDirectory>
 					</configuration>
@@ -102,8 +96,8 @@
 							<goal>install-node-and-npm</goal>
 						</goals>
 						<configuration>
-							<nodeVersion>v12.14.0</nodeVersion>
-							<npmVersion>6.13.4</npmVersion>
+														<nodeVersion>v18.20.4</nodeVersion>
+														<npmVersion>10.7.0</npmVersion>
 						</configuration>
 					</execution>
 					<execution>
