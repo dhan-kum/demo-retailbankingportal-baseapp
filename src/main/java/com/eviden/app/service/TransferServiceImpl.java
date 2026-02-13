@@ -39,8 +39,8 @@ public class TransferServiceImpl  {
                 bankAccountRepository.save(senderAccount.get());
                 bankAccountRepository.save(receiverAccount.get());
                 Map<String, Optional<BankAccount>> accountMap = new HashMap<>();
-                accountMap.put("senderAccount",receiverAccount);
-                accountMap.put("receiverAccount",receiverAccount);
+                accountMap.put("senderAccount", senderAccount);
+                accountMap.put("receiverAccount", receiverAccount);
                 return accountMap;
             }
         }
