@@ -1,9 +1,21 @@
 package com.eviden.app.dto;
 
+import jakarta.validation.constraints.NotNull;
+import jakarta.validation.constraints.Positive;
+import jakarta.validation.constraints.Pattern;
+
 public class TransferDTO {
 
+    @NotNull(message="Sender account number is required")
+    @Pattern(regexp = "^[0-9]{12}$", message="Sender account number must be 12 digits")
     private String senderAccount;
+    
+    @NotNull(message="Receiver account number is required")
+    @Pattern(regexp = "^[0-9]{12}$", message="Receiver account number must be 12 digits")
     private String receiverAccount;
+    
+    @NotNull(message="Amount is required")
+    @Positive(message="Amount must be positive")
     private Double amount;
 
     public TransferDTO() {

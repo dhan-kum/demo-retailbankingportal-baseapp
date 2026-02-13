@@ -1,5 +1,7 @@
 package com.eviden.app.controller;
 
+import jakarta.validation.Valid;
+import jakarta.validation.constraints.Pattern;
 import com.eviden.app.dto.TransferDTO;
 import com.eviden.app.entity.BankAccount;
 import com.eviden.app.entity.Transfer;
@@ -52,19 +54,25 @@ public class BankAccountController {
     }
 
     @GetMapping("/{id}")
-    public BankAccount getBankAccount(@PathVariable String id) {
+    public BankAccount getBankAccount(@PathVariable @Pattern(regexp = "^[0-9]{12}$", message="Invalid account number format") String id) {
         BankAccount account = bankAccountRepository.findByAccountNumber(id);
-        logger.info("Inside getBankAccount() method - {}", account);
+        // SECURITY: Don't log full account details
+        logger.info("Account lookup requested for account ending in: {}", 
+            id.length() >= 4 ? "****" + id.substring(id.length() - 4) : "****");
         return account;
     }
 
+    // SECURITY: This endpoint has been disabled due to log injection vulnerability
+    // Logging should be done through proper audit mechanisms, not user-controlled inputs
+    /*
     @PostMapping("/logmessage")
     public void saveLogs(@RequestParam String logmsg) {
         logger.info(logmsg);
     }
+    */
 
     @PostMapping("/transfer")
-    public ResponseEntity<String> transfer(@RequestBody TransferDTO transferDTO) {
+    public ResponseEntity<String> transfer(@Valid @RequestBody TransferDTO transferDTO) {
         Transfer transfer = new Transfer(transferDTO.getSenderAccount(), transferDTO.getReceiverAccount(), transferDTO.getAmount());
         try {
             Map<String, Optional<BankAccount>> backAccountCollection = transferService.transfer(transfer);
@@ -94,6 +102,9 @@ public class BankAccountController {
         return ResponseEntity.badRequest().build();
     }
 
+    // SECURITY: This endpoint has been disabled due to path traversal vulnerability
+    // File operations should be properly sandboxed and validated
+    /*
     @GetMapping("/createzip")
     public String createZip(@PathVariable String sourceDir, @PathVariable String zipFile) {
         String msg = null;
@@ -108,6 +119,7 @@ public class BankAccountController {
         }
         return msg;
     }
+    */
 
     @GetMapping("/connect")
     public void send() throws Exception {
