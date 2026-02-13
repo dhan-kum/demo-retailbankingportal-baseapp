@@ -52,7 +52,6 @@ public class SecurityConfig {
                     .includeSubDomains(true)
                     .maxAgeInSeconds(31536000) // 1 year
                 )
-                .xssProtection(xss -> xss.headerValue("1; mode=block"))
             )
             // HTTP Basic authentication (replace with OAuth2/JWT in production)
             .httpBasic();
