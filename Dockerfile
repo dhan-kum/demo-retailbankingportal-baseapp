@@ -25,9 +25,15 @@ COPY --from=build --chown=appuser:appuser /home/app/target/baseapp-0.0.1-SNAPSHO
 # Switch to non-root user
 USER appuser
 
-# Health check
+# Health check - removed CMD as Spring Boot JAR cannot be executed this way
+# Use Kubernetes liveness/readiness probes or Docker Compose health checks instead
+# Example for K8s:
+# livenessProbe:
+#   httpGet:
+#     path: /actuator/health
+#     port: 8080
 HEALTHCHECK --interval=30s --timeout=3s --start-period=40s --retries=3 \
-  CMD java -cp /app/app.jar org.springframework.boot.actuator.health.HealthEndpoint || exit 1
+  CMD wget --no-verbose --tries=1 --spider http://localhost:8080/ || exit 1
 
 EXPOSE 8080
 
